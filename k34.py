@@ -43,11 +43,64 @@ class ktools:
     self.m()
     self.put()
 
+  def pick4d(self):
+    self.pick()
+    self.m()
+    self.tr()
+    self.m()
+    self.tl()
+    self.pick()
+    self.m()
+    self.tr()
+    self.m()
+    self.pick()
+    self.tl()
+    self.m()
+    self.tr()
+    self.m()
+    self.pick()
+
+  def m5(self):
+    """move 5"""
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+  
 def main():
     """ Karel code goes here! """
     kt = ktools()
+    kt.m5()
+    kt.tl()
+    kt.m5()
+    kt.m()
+    kt.m()
+    kt.tr()
+    kt.pick4d()
+    kt.tr()
+    kt.m5()
+    kt.m()
+    kt.tr()
+    kt.tr()
+    kt.pick4d()
+    kt.tl()
+    kt.tl()
+    kt.m5()
+    kt.tl()
+    kt.m()
+    kt.ta()
+    kt.pick4d()
+    kt.tr()
+    kt.m5()
+    kt.tr()
+    kt.m()
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.pick4d()
     pass
 
 
 if __name__ == "__main__":
-    run_karel_program()/
+    run_karel_program()
