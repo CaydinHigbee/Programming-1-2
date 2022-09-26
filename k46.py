@@ -50,6 +50,11 @@ class ktools:
     self.m()
     self.m()
 
+  def m2(self):
+    self.m()
+    self.m()
+  
+
   def fic(self) -> bool:
     """front is clear"""
     return front_is_clear()
@@ -101,9 +106,46 @@ class ktools:
       self.m()
     self.put()
 
+  def h2(self):
+    self.tl()
+    self.m2()
+    self.tr()
+    self.m()
+    self.tr()
+    self.m2()
+    self.tl()
+
+  def h1(self):
+    self.tl()
+    self.m()
+    self.tr()
+    self.m()
+    self.tr()
+    self.m()
+    self.tl()
+
+  def h3(self):
+    self.tl()
+    self.m2()
+    self.m()
+    self.tr()
+    self.m()
+    self.tr()
+    self.m2()
+    self.m()
+    self.tl()
+
 def main():
     """ Karel code goes here! """
     kt = ktools()
+    kt.h2()
+    kt.h1()
+    kt.m()
+    kt.h3()
+    kt.m()
+    kt.h2()
+    kt.m()
+    kt.h2()
   
     pass
 
